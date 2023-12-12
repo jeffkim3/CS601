@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+    <script src="./script/header.js" defer></script>
+    <script src="./script/footer.js" defer></script>
+    <script src="./script/form.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js" defer></script>
+</head>
+<body>
+    <header id="site-header"></header>
+
+    <main>
+        <div class="container">
+            <div class="left-container">
+                <h1>Reach Out To Me</h1>
+                    <form id="myForm" action="./contact_processor.php" method="post">
+                        <div>
+                            <label for="firstName">First Name:</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                            <span class="error" id="firstNameError"></span>
+                        </div>
+                        <div>
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                            <span class="error" id="lastNameError"></span>
+                        </div>
+                        <div>
+                            <label for="emailAddress">Email Address:</label>
+                            <input type="email" id="emailAddress" name="emailAddress" required>
+                            <span class="error" id="emailAddressError"></span>
+                        </div>
+                        <div>
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div>
+                            <label for="messageBody">Message:</label>
+                            <textarea id="messageBody" name="messageBody" rows="5" required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">Submit</button>
+                        </div>
+                        <div id="generalError" class="error"></div>
+                    </form>
+                    <div id="successMessage" style="display:none;">Successful!!!</div>
+                    <script>
+                        document.getElementById('myForm').addEventListener('submit', function() {
+                            // Assuming the form submission is successful
+                            document.getElementById('successMessage').style.display = 'block';
+                        });
+                    </script>                    
+                </div>
+            <div class="right-container">
+                <h1>Location</h1>
+                <div id="map" style="height: 500px; width: 100%;"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="site-footer"></footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var map = L.map('map').setView([37.52711, 127.03131], 13);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+
+            var marker = L.marker([37.52711, 127.03131]).addTo(map);
+            marker.bindPopup("<b>Address:</b><br>3-209, Eonju-ro 123, Gangnam-gu, Seoul, 06298.").openPopup();
+        });
+    </script>
+</body>
+</html>
