@@ -1,0 +1,390 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 80vh; 
+    width: 100%; 
+}
+
+#container-left {
+    text-align: left;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    order: 1;
+}
+
+#container {
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    order: 2;
+}
+
+#container-right {
+    text-align: left;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    order: 3;
+}
+
+#container-left h1, #container-right h1 {
+    color: #161A30; 
+}
+
+#container-left p, #container-right p {
+    color: #000000; 
+}
+
+
+#video iframe {
+    max-width: 100%;
+    height: 600px;
+}
+
+#profile-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: auto;
+    width: 75%;
+    padding: 20px;
+}
+
+#profile-content h1 {
+    color: #161A30;
+}
+
+#profile-content p {
+    color: #000000; 
+}
+
+#project-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 50px; 
+}
+
+#projects-container {
+    width: 100%; 
+    margin: auto;
+    padding-top: 20px; 
+}
+
+#memes-container {
+    width: 50%;        
+    margin: 0 auto;    
+    display: flex;     
+    flex-wrap: wrap;   
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 20px;      
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.background-img {
+    background-image: url('./img/landingBG3.jpg'); 
+    background-repeat: repeat;  
+}
+
+/* Header and Footer Styles */
+header {
+    background-color: #F0ECE5;
+    color: white;
+    text-align: center;
+    padding: 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+footer {
+    background-color: #31304D;
+    color: white;
+    text-align: center;
+    padding: 0px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+header img {
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #161A30;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.active {
+    color: #161A30;
+    background-color: #B6BBC4;
+    border: 3px solid #B6BBC4;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+/* Slogan Styles */
+#slogan {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+/* Layout Container */
+.left-container,
+.middle-container,
+.right-container {
+    flex: 0 0 auto;
+    padding: 0;
+}
+
+.left-container {
+    flex: 1;
+    padding: 10px; 
+    order: 1;
+    text-align: left;
+}
+
+.middle-container {
+    order: 2;
+    text-align: center;
+}
+
+.right-container {
+    flex: 1;
+    padding: 10px;
+    order: 3;
+    text-align: center;
+}
+
+/* Content Alignment for Smaller Screens */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 75%;
+    width: 100%;
+}
+
+#container h1 {
+    color: #31304D;
+}
+
+#container p {
+    color: black;
+}
+
+
+.content-container {
+    width: 100%;
+    padding: 10px;
+}
+
+/* General Style for Photo Containers */
+.photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Style for Individual Photos */
+.photo {
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+/* Photo Gallery Styles */
+.photo-thumbnail {
+width: calc(33.333% - 20px); /* 3 thumbnails per row, minus margin */
+height: 300px; 
+margin: 10px;
+object-fit: cover;
+transition: height 0.3s ease;
+box-sizing: border-box;
+border: 10px solid white; 
+}
+
+.photo-thumbnail--expanded {
+    height: auto; 
+    max-height: 600px; 
+    width: auto; 
+    max-width: 100%; 
+}
+
+.photo-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.project-card {
+    background-color: #457b9d; 
+    border-radius: 20px; 
+    padding: 20px; 
+    color: white; 
+    margin-bottom: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 1200px; 
+    word-wrap: break-word; 
+}
+
+.project-card h1 {
+    font-size: 1.5em; 
+    margin-bottom: 0.5em; 
+}
+
+.project-card p {
+    font-size: 1em; 
+    margin-bottom: 0.5em;
+}
+
+.project-card p strong {
+    font-weight: bold; 
+}
+
+/* Form Styling */ 
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+
+/* Apply styles to both input[type="submit"] and button elements */
+input[type="submit"], button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(to right, #31304D, #021b35);
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    text-transform: uppercase; 
+}
+
+.error {
+    color: red;
+    display: block; 
+    margin-top: 5px;
+}
+
+/* Adjust the hover effect for the gradient button */
+input[type="submit"]:hover, button:hover {
+    background: linear-gradient(to right, #1e457b, #404272); 
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.bouncing {
+    animation: bounce 1s infinite;
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive Navigation Menu */
+@media screen and (max-width: 768px) {
+    #slogan {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-container,
+    .middle-container,
+    .right-container {
+        width: 100%;
+        margin: 10px 0; /* Stacking them with vertical space */
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        padding: 0;
+    }
+
+    .nav-item {
+        padding: 5px;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 100%;
+        position: relative;
+        padding-bottom: 56.25%; 
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    #profile-content {
+        flex-direction: column; /* Change to vertical flex */
+    }
+
+    #container-left, #container-right {
+        width: 100%; /* 화면 너비에 맞춰 조정 */
+    }
+
+    .bouncing {
+        width: 80%;
+        height: auto; 
+    }
+}

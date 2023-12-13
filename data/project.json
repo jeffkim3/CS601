@@ -1,0 +1,62 @@
+[
+    {
+        "name": "EcoBridge",
+        "year": 2022,
+        "solution": "Sustainable Transportation",
+        "description": "Developing eco-friendly pedestrian bridges in urban areas to enhance green transportation."
+    },
+    {
+        "name": "SolarNet",
+        "year": 2021,
+        "solution": "Renewable Energy",
+        "description": "Integrating advanced solar panels into public infrastructures for clean energy usage."
+    },
+    {
+        "name": "AquaHarvest",
+        "year": 2023,
+        "solution": "Water Conservation",
+        "description": "Innovative water harvesting techniques in arid regions to improve water sustainability."
+    },
+    {
+        "name": "TechEdu",
+        "year": 2020,
+        "solution": "Educational Technology",
+        "description": "Enhancing learning experiences through cutting-edge educational technologies."
+    },
+    {
+        "name": "GreenFarm",
+        "year": 2024,
+        "solution": "Sustainable Agriculture",
+        "description": "Promoting sustainable farming practices to increase food production efficiency."
+    },
+    {
+        "name": "CleanAir",
+        "year": 2019,
+        "solution": "Air Quality Improvement",
+        "description": "Implementing solutions to reduce air pollution and improve urban air quality."
+    },
+    {
+        "name": "SmartCity",
+        "year": 2022,
+        "solution": "Urban Development",
+        "description": "Creating intelligent urban infrastructures for efficient city management."
+    },
+    {
+        "name": "OceanClean",
+        "year": 2023,
+        "solution": "Marine Conservation",
+        "description": "Initiatives to clean and preserve ocean ecosystems and marine life."
+    },
+    {
+        "name": "HealthTrack",
+        "year": 2021,
+        "solution": "Healthcare Innovation",
+        "description": "Advanced healthcare tracking systems for improved patient care and management."
+    },
+    {
+        "name": "FutureHome",
+        "year": 2022,
+        "solution": "Smart Housing",
+        "description": "Developing smart homes with advanced automation for enhanced living experience."
+    }
+]
