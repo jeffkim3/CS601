@@ -1,4 +1,3 @@
-// model.js
 const lifestyleModel = {
     family: {
         photos: ['./img/photo1a.jpg', './img/photo2.jpeg', './img/photo2a.jpeg', './img/photo3.jpeg', './img/photo3a.jpeg'],
